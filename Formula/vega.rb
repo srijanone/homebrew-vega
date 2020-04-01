@@ -2,16 +2,16 @@
 class Vega < Formula
   desc "vega"
   homepage ""
-  version "0.0.4"
+  version "0.0.5"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/srijanone/vega/releases/download/v0.0.4/vega_0.0.4_mac_x86_64.tar.gz"
-    sha256 "3f29f2d49935d9a1482c520f6806a905df8ceccb1f60c8ac5bff3c8ee98907bb"
+    url "https://github.com/srijanone/vega/releases/download/v0.0.5/vega_0.0.5_mac_x86_64.tar.gz"
+    sha256 "a62af23b5a281e1046514243b976994cd3266dd32df38ff33c5cf38aa14a66df"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/srijanone/vega/releases/download/v0.0.4/vega_0.0.4_linux_x86_64.tar.gz"
-      sha256 "b53ffc5f39c8e02042fa130839c8eb051899e88c36ed01349b6811bed5382062"
+      url "https://github.com/srijanone/vega/releases/download/v0.0.5/vega_0.0.5_linux_x86_64.tar.gz"
+      sha256 "f09a867686ee042caa6c6e6de85ec9dcb596246fb3afde50636336cfe426c19d"
     end
   end
 
