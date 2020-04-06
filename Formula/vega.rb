@@ -2,19 +2,20 @@
 class Vega < Formula
   desc "vega"
   homepage ""
-  version "0.0.7"
+  version "0.0.8"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/srijanone/vega/releases/download/v0.0.7/vega_0.0.7_mac_x86_64.tar.gz"
-    sha256 "bc9c55cf7b2aca45b512d09b574ae02fe250f1f8192b6eac4dcb5ddbb7044171"
+    url "https://github.com/srijanone/vega/releases/download/v0.0.8/vega_0.0.8_mac_x86_64.tar.gz"
+    sha256 "ff543da589abfa4969c0b1609c617cbd009afa828f9b8414e1c15e519b5b0d27"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/srijanone/vega/releases/download/v0.0.7/vega_0.0.7_linux_x86_64.tar.gz"
-      sha256 "eecf48ddcc60e43fa708c6afd993be38c524fed1952609ad928b3e3f2a287493"
+      url "https://github.com/srijanone/vega/releases/download/v0.0.8/vega_0.0.8_linux_x86_64.tar.gz"
+      sha256 "c333dc6c7982626d0ddf194a96bbc7daa626a31e8ff89995ae752a6c5b8955c7"
     end
   end
   
+  depends_on "git"
   depends_on "windmilleng/tap/tilt"
 
   def install
