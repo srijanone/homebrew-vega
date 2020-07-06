@@ -6,12 +6,12 @@ class Vega < Formula
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/srijanone/vega/releases/download/v1.0.1/vega_mac_x86_64.tar.gz"
-    sha256 "30f82de095f847a0e7753a94ed09bdda6d4bb33133c45460383e313686a03652"
+    url "https://github.com/srijanone/vega/releases/download/v1.0.1/vega_darwin_amd64.tar.gz"
+    sha256 "5719e3275c06b57d449b399ab1d168a31a5c69561a77bd14870deaa786a15dda"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/srijanone/vega/releases/download/v1.0.1/vega_linux_x86_64.tar.gz"
-      sha256 "db72d1e25819188ed95e3814039f591db74ef5049ae29b58c7831eaf34c79450"
+      url "https://github.com/srijanone/vega/releases/download/v1.0.1/vega_linux_amd64.tar.gz"
+      sha256 "8f4cd4e431f77cc20ba9141192c1a312e024365b194a16085497aca768a1e86e"
     end
   end
   
