@@ -7,11 +7,11 @@ class Vega < Formula
 
   if OS.mac?
     url "https://github.com/srijanone/vega/releases/download/v1.0.2/vega_darwin_amd64.tar.gz"
-    sha256 "60303956cb8ebcc5d325d5af78844d06b1e105c976684da48ba088a103f2e9ed"
+    sha256 "c21e54380f92e3153f0657f44b25370191026ce8a95cfbeacb15166df611ec3d"
   elsif OS.linux?
     if Hardware::CPU.intel?
       url "https://github.com/srijanone/vega/releases/download/v1.0.2/vega_linux_amd64.tar.gz"
-      sha256 "fe439a2803ce5ac8f33afe7e25a5050e203080c13b60c5de72588894f0904d5c"
+      sha256 "e555503f389a7b7df75311a1015ab337a9b84bcd598821eea8262e409272537b"
     end
   end
   
